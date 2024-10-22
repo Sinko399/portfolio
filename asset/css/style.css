@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* min-height: 100vh; */
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    gap: 1em;
+}
+.container > div {
+    background-color: white;
+}
+.container > div:first-child {
+    grid-column: 1/5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.container > div:first-child .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.container > div:first-child .nav ul a {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container > div:first-child .logo img {
+    width: 40px;
+}
+.container > div:first-child .menu {
+    display: none;
+}
+.container > div:first-child .line {
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    margin: 5px;
+}
+
+.container > div:nth-child(2) {
+    grid-column: 1/5;
+    height: 50vh;
+    position: relative;
+}
+.container > div:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+}
+.container > div:nth-child(2) .internal-nav {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    width: 300px;
+    background-color: rgba(204, 135, 112, 0.358);
+    border-radius: 20px;
+}
+.container > div:nth-child(2) .internal-nav ul {
+    list-style: none;
+    padding: 30px;
+}
+.container > div:nth-child(2) .internal-nav ul li a {
+    display: block;
+    color: white;
+    padding: 5px 0;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+/* STYLE RULES FOR SKILLS */
+.container > div:nth-child(3) {
+    /* padding: 20px; */
+    text-align: left;
+    grid-column: 1/5;
+}
+.container > div:nth-child(3) h1 {
+    border-bottom: 2px solid red;
+}
+.container > div:nth-child(4),
+.container > div:nth-child(5),
+.container > div:nth-child(6),
+.container > div:nth-child(7) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container > div:nth-child(4):hover,
+.container > div:nth-child(5):hover,
+.container > div:nth-child(6):hover,
+.container > div:nth-child(7):hover {
+    background-color: red;
+    color: white;
+}
+
+.container > div:nth-child(8) {
+    grid-column: 1/5;
+    height: 50vh;
+    position: relative;
+}
+.container > div:nth-child(8) img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container > div:nth-child(8) .project-detail {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    width: 300px;
+    background-color: rgba(216, 168, 152, 0.358);
+    border-radius: 20px;
+}
+.container > div:nth-child(8) .project-detail ul {
+    list-style: none;
+    padding: 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.container > div:nth-child(8) .project-detail ul li a {
+    display: block;
+    color: rgb(221, 199, 199);
+    padding: 5px 0;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+.container > div:nth-child(8) .project-detail h1 {
+    margin-left: 50px;
+    color: rgb(113, 113, 216);
+    cursor: pointer;
+}
+.container > div:nth-child(9) {
+    grid-column: 1/5;
+    align-items: center;
+    background-color: rgb(228, 226, 226);
+}
+.container > div:nth-child(9) h1 {
+    margin-top: 30px;
+    align-items: center;
+    color: black;
+    margin-left: 50px;
+}
+.container > div:nth-child(9) form {
+    align-items: center;
+    margin-left: 60px;
+    padding: 40px;
+}
+.container > div:nth-child(9) form label {
+    display: block;
+}
+.container > div:nth-child(9) > form input[type="text"]:focus,
+.container > div:nth-child(9) > form input[type="email"]:focus,
+.container > div:nth-child(9) > form input[type="tel"]:focus {
+    background-color: #bebebe;
+}
+.container > div:nth-child(9) > form input[type="text"],
+.container > div:nth-child(9) > form input[type="email"],
+.container > div:nth-child(9) > form input[type="tel"],
+textarea {
+    /* width: 100%; */
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.container > div:nth-child(9) > form .submit-button{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+    cursor: pointer;
+}
+.container > div:nth-child(9) > form .submit-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.container > div:last-child {
+    grid-column: 1/5;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.container > div:last-child img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container > div:last-child .skill-link {
+    position: absolute;
+    color: blue;
+    right: 30px;
+    bottom: 50px;
+    width: 300px;
+    background-color: rgba(216, 168, 152, 0.358);
+    border-radius: 20px;
+}
+.container > div:last-child a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    color: white;
+    text-transform: capitalize;
+}
